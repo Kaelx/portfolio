@@ -137,6 +137,7 @@ header.sticky{
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 1.5rem;
+	transition: 1s;
 }
 .about-img img{
 	max-width: 530px;
@@ -160,6 +161,10 @@ header.sticky{
 	font-size: var(--p-font);
 	line-height: 1.8;
 	margin-bottom: 4rem;
+}
+body:hover .about{
+	transform: translateY(-2%);
+	transition: all 1s 0s ease;
 }
 
 
@@ -194,7 +199,7 @@ header.sticky{
 	transition: all .45s ease;
 }
 .s-icons i{
-	font-size: 32px;
+	font-size: 60px;
 	margin-bottom: 20px;
 }
 .box h3{
