@@ -83,8 +83,6 @@ section{
 	align-items: center;
 	justify-content: flex-start;
 }
-
-
 .home-text h1{
 	font-size: var(--big-font);
 	font-weight: 700;
@@ -105,21 +103,22 @@ section{
 	line-height: 1.8;
 	margin-bottom: 40px;
 }
-
-
-.btn{
-	display: inline-block;
-	padding: 12px 28px;
+.home-text i{
+	height: 45px;
+	width: 45px;
 	background: var(--main-color);
-	border-radius: 5px;
 	color: var(--text-color);
-	font-size: 1rem;
-	letter-spacing: 1px;
-	font-weight: 600;
+	font-size: 22px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	margin-right: 15px;
 	transition: all .45s ease;
 }
-.btn:hover{
-	transform: scale(0.9);
+.home-text i:hover{
+	background: var(--text-color);
+	color: var(--main-color);
 }
 
 
@@ -129,11 +128,18 @@ header.sticky{
 	padding: 12px 15%;
 }
 
+
+
 .about{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 1.5rem;
+}
+.about-img{
+	transition: 1s;
+}
+.about-text{
 	transition: 1s;
 }
 .about-img img{
@@ -159,10 +165,20 @@ header.sticky{
 	line-height: 1.8;
 	margin-bottom: 4rem;
 }
-body:hover .about{
-	transform: translateY(-2%);
+.about:hover .about-img{
+	transform: translateY(-7%);
 	transition: all 1s 0s ease;
 }
+.about:hover .about-text{
+	transform: translateY(-10%);
+	transition: all 1s 0s ease;
+}
+
+
+
+
+
+
 
 
 
@@ -198,6 +214,8 @@ body:hover .about{
 .s-icons i{
 	font-size: 60px;
 	margin-bottom: 20px;
+	background-color: var(--main-color);
+	border-radius: 5px;
 }
 .box h3{
 	font-size: 24px;
@@ -271,9 +289,8 @@ body:hover .about{
 	transition: height 0.5s;
 }
 .layer h5{
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 15px;
+	font-size: 24px;
+	font-weight: bold;
 }
 .layer p{
 	color: var(--second-color);
@@ -467,5 +484,11 @@ body:hover .about{
 	}
 	.navlist.open{
 		top: 100%;
+	}
+	.services-content{
+		display: block;
+	}
+	.box{
+		margin: 25px;
 	}
 }
