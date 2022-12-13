@@ -1,0 +1,103 @@
+body{
+    background: #2a2a2a;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-text h1{
+    font-size: 42px;
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.main-text span{
+    font-family: 'Anton', sans-serif;
+    color:#a52a2a;
+}
+.main-text p{
+    margin: 20px 50px;
+    text-align: center;
+    color: #FEFCF3;
+    font-size: 18px;
+
+}
+.main img{
+    position: relative;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.backBtn{
+    text-align: center;
+}
+.backBtn a{
+    text-decoration: none;
+    color: #FEFCF3;
+    font-size: 16px;
+    background: #a52a2a;
+    padding: 6px 12px;
+    margin: 15px 0;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border-style: none;
+    cursor: pointer;
+}
+
+/* =============================== Responsive ============================ */
+@media (max-width: 1279px){
+    .main-text h1{
+        font-size: 36px;
+    }
+}
+@media (max-width: 780px){
+    .main-text h1 {
+        font-size: 34px;
+    }
+    .main-text p{
+        font-size: 14px;
+        margin: 20px 30px;
+    }
+    .main img{
+        position: relative;
+        width: 60%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        transition: all .3s ease;
+    }
+}
+@media (max-width: 480px){
+    .main-text h1 {
+        font-size: 22px;
+    }
+    .main-text p{
+        font-size: 12px;
+        margin: 20px 20px;  
+    }
+    .main img{
+        position: relative;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        transition: all .3s ease;
+    }
+    .backBtn a{
+        font-size: 12px;
+        padding: 6px 10px;
+        margin: 12px 0;
+        border-radius: 12px;
+    }
+}
